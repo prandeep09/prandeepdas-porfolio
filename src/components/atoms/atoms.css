@@ -1,0 +1,20 @@
+/* Tags */
+
+.tag {
+  font-size: var(--fontSize-label-S);
+  padding: var(--sc-4) var(--sc-8);
+  border-radius: var(--sc-8);
+}
+
+.tag--info {
+  color: var(--blue-darker);
+  background: var(--blue-lightest);
+}
+.tag--success {
+  color: var(--green-darker);
+  background: var(--green-lightest);
+}
+.tag--warning {
+  color: var(--orange-darker);
+  background: var(--orange-lightest);
+}

@@ -1,0 +1,33 @@
+.container {
+  max-width: 1440px; /* Match this with the width of your Figma frame */
+  margin: 0 auto; /* Center the container */
+}
+
+.section-wrapper {
+  margin: var(--margin-fullPage);
+}
+
+/* Smartphones (portrait and smaller) */
+@media (max-width: 480px) {
+  /* Styles for smartphones */
+}
+
+/* Smartphones (landscape) and smaller tablets (portrait) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Styles for landscape smartphones and smaller tablets */
+}
+
+/* Tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets in portrait mode */
+}
+
+/* Tablets (landscape) and small laptops */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  /* Styles for tablets in landscape and small laptops */
+}
+
+/* Laptops and desktops */
+@media (min-width: 1201px) {
+  /* Styles for laptops and desktops */
+}

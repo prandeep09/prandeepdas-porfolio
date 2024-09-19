@@ -1,0 +1,91 @@
+#root {
+  margin: 0 auto;
+  background-color: #fffaf4;
+  background-color: var(--warm-white);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Headings */
+.heading__hero {
+  font-size: var(--fontSize-hero-heading);
+  font-weight: var(--fontWight-bold);
+  line-height: var(--lineHeight-hero-heading);
+  margin-bottom: var(--mb--heroHeading);
+}
+.heading__XL {
+  font-size: var(--fontSize-heading-XL);
+  font-weight: var(--fontWight-bold);
+  line-height: var(--lineHeight-heading-XL);
+}
+.heading__L {
+  font-size: var(--fontSize-heading-L);
+  font-weight: var(--fontWight-bold);
+  line-height: 3.9rem;
+}
+.heading__M {
+  font-size: var(--fontSize-heading-M);
+  font-weight: var(--fontWight-bold);
+  line-height: 2.93rem;
+}
+
+.heading__S {
+  font-size: var(--fontSize-heading-S);
+  font-weight: var(--fontWight-bold);
+  line-height: 2.76rem;
+}
+.heading__section {
+  font-size: var(--fontSize-heading-section);
+  font-weight: var(--fontWight-bold);
+  line-height: var(--lineHeight-heading-section);
+}
+
+/* Paragraphs */
+.paragraph__small {
+  font-size: var(--fontSize-paragraph-S);
+  font-weight: var(--fontWight-regular);
+  line-height: var(--lineHeight-paragraph-S);
+}
+.paragraph__hero,
+.paragraph__section {
+  font-size: var(--fontSize-paragraph-hero);
+  font-weight: var(--fontWight-regular);
+  line-height: var(--lineHeight-paragraph-hero);
+  margin-bottom: var(--mb--heroParagraph);
+}
+
+.paragraph__section {
+  width: 74rem;
+  margin: 0 auto;
+  color: var(--green);
+}
+
+/* Smartphones (portrait and smaller) */
+@media (max-width: 480px) {
+  /* Styles for smartphones */
+  /* .heading__XL {
+    font-size: var(--fontSize-heading-XL--mobile);
+    font-weight: var(--fontWight-bold);
+    line-height: 4.5rem;
+  } */
+  .paragraph__section {
+    width: auto;
+  }
+}

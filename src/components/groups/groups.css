@@ -1,0 +1,229 @@
+/* Section */
+.section {
+  /* padding-bottom: 7.2rem; */
+  padding-bottom: 14.4rem;
+}
+/* Hero */
+.hero {
+  background: var(--gradient-2--LGO__reg);
+  padding-bottom: 7.2rem;
+}
+.hero__wrapper {
+  display: flex;
+}
+.hero__right-wrapper,
+.hero__left-wrapper {
+  width: 50%;
+}
+.hero__right-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__wrapper div {
+  margin: 0 var(--sc-8);
+}
+.hero__left-wrapper .hero__illustration {
+  width: 100%;
+}
+
+/* Navbar */
+.nav {
+  /* background-color: #ddd; */
+  font-family: var(--fontFamily-primary);
+  font-weight: var(--fontWight-bold);
+}
+.nav__wrapper {
+  margin: var(--margin-fullPage);
+  padding: 4.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+}
+.logo {
+  height: 100%;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.portfolioLogo:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.nav__wrapper a {
+  height: 100%;
+}
+
+.nav__links {
+  width: 45%;
+  margin: 0 3.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__links li {
+  list-style-type: none;
+  color: var(--green-darker);
+}
+
+.nav__links li a {
+  font-weight: inherit;
+  color: inherit;
+}
+.nav__links li a:hover {
+  opacity: 0.75;
+}
+
+/* Heighlights */
+
+.heighlights {
+  background: var(--gradient-1--LGW__rev);
+  padding-bottom: 7.2rem;
+}
+
+/* Footer */
+
+.footer {
+  background: url("../../assets/Footer.svg");
+  background-size: cover; /* Makes the image cover the whole area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: auto; /* Set a height for the div */
+  width: 100%; /* Set width as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__top {
+  padding: 7.2rem 10rem;
+  margin: auto 0;
+}
+
+.footer__bottom {
+  text-align: center;
+  background: var(--green-darker);
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  padding: var(--sc-24) 0;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact__info {
+  /* border: 1px solid var(--green);
+  border-radius: var(--sc-24); */
+}
+.contact__infoitem {
+  display: flex;
+  align-items: center;
+  gap: var(--sc-12);
+  padding: 1.2rem;
+  border-radius: 1.6rem;
+  background: #44ac0621;
+  margin-bottom: 1.6rem;
+}
+
+.social__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sc-8);
+  width: 26rem;
+}
+
+.icon--circle {
+  background: var(--green);
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 1.2rem;
+}
+
+.menu__dropdown {
+  display: none;
+  width: 72%;
+  position: absolute;
+  top: 6rem;
+  right: 0.8rem;
+  background: var(--green);
+
+  border-radius: 1.6rem;
+  padding: 2.4rem;
+  color: var(--white);
+  box-shadow: 0 1rem 3.2rem 2.2rem hsl(90deg 87.1% 25.54% / 10%),
+    0 2rem 2rem 0rem hsl(90deg 92.13% 26.31% / 20%);
+
+  transition: all;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.menu__dropdown ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.menu__dropdown ul li {
+  padding: 1.2rem 0;
+}
+.menu__dropdown ul li a {
+  color: var(--warm-white);
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding-bottom: 4rem;
+  }
+  /* Hero */
+  .hero__wrapper {
+    flex-direction: column;
+  }
+  .hero__wrapper div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .hero__right-wrapper,
+  .hero__left-wrapper {
+    width: auto;
+  }
+  .hero__wrapper .hero__right-wrapper {
+    margin-bottom: 3.2rem;
+  }
+  /* Footer */
+  .footer__top {
+    padding: 4rem 0.8rem;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .footer__bottom {
+    padding: 1.6rem var(--sc-24);
+  }
+  .social__info {
+    width: auto;
+    padding-top: 2.4rem;
+  }
+  .social__info a {
+    width: auto;
+  }
+  .social__info a img {
+    width: 4rem;
+  }
+  .nav__wrapper {
+    padding: 2.4rem 0;
+    height: 3.2rem;
+  }
+  .nav__links {
+    display: none;
+  }
+  .menu__dropdown.show {
+    display: inline-block;
+  }
+}

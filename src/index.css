@@ -1,0 +1,126 @@
+:root {
+  font-family: Montserrat, Poppins, Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%; /* 62.5% of the default 16px browser font size equals 10px */
+  scroll-behavior: smooth;
+}
+
+a {
+  font-weight: 700;
+  color: var(--green-darker);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--orange-darker);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fontFamily-secondary);
+  font-size: var(--fontSize-paragraph-regular);
+  color: var(--grey-darker);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fontFamily-primary);
+}
+
+/* button:hover {
+  border-color: var(--green-dark);
+} */
+/* TODO: Not sure why outline is not taking proper coloe */
+/* button:focus,
+button:focus-visible {
+  outline: 10px auto var(--green);
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+/* Global style */
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
+
+/* FONTS */
+
+.montserrat-thin {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Smartphones (portrait and smaller) */
+@media (max-width: 480px) {
+  /* Styles for smartphones */
+  html {
+    font-size: 100%;
+  }
+}
+
+/* Smartphones (landscape) and smaller tablets (portrait) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Styles for landscape smartphones and smaller tablets */
+}
+
+/* Tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets in portrait mode */
+}
+
+/* Tablets (landscape) and small laptops */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  /* Styles for tablets in landscape and small laptops */
+}
+
+/* Laptops and desktops */
+@media (min-width: 1201px) {
+  /* Styles for laptops and desktops */
+}

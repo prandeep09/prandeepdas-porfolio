@@ -1,0 +1,173 @@
+/* Button */
+.button-gen {
+  border-radius: var(--sc-12);
+  border: 1px solid transparent;
+  padding: 0.8rem 1.2rem;
+  font-size: var(--fontSize-paragraph-regular);
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  transition: background 0.3s, color 0.1s;
+  transition-timing-function: ease-in-out;
+}
+.button-primary {
+  background: var(--green);
+  outline-color: var(--green);
+  background-color: var(--green);
+}
+.button-outline {
+  border: 0.15rem solid var(--green);
+  color: var(--green);
+  outline-color: var(--green);
+  background: transparent;
+}
+
+.button-primary:hover,
+.button-outline:hover {
+  background: var(--green-dark);
+}
+.button-outline:hover {
+  background: var(--green-lightest);
+}
+.nav__wrapper .showMenuBtn {
+  display: none;
+}
+/* sectionHead */
+
+.sectionHead {
+  padding-top: 14.4rem;
+  margin-bottom: 12rem;
+  text-align: center;
+}
+
+/* Cards */
+.card__wrapper {
+  display: flex;
+  gap: var(--sc-24);
+}
+
+.card {
+  width: 35rem;
+  padding: 4.8rem;
+  background: var(--white);
+  border-radius: var(--sc-28);
+}
+.card__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  margin-bottom: var(--sc-40);
+}
+.card__head img {
+  width: 100%;
+  height: auto;
+}
+
+.card__body h4 {
+  margin-bottom: var(--sc-12);
+}
+.card__body h3 {
+  margin-bottom: var(--sc-16);
+}
+
+/* Workcard */
+.workcard__tags--wrapper {
+  display: flex;
+  flex-flow: wrap;
+  gap: var(--sc-8);
+  margin-bottom: var(--sc-24);
+}
+
+.workcard__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.workcard {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sc-24);
+  border-radius: var(--sc-24);
+}
+.workcard:not(:last-child) {
+  border: 1px solid var(--green-lighter);
+}
+.workcard:nth-child(1) {
+  background: var(--gradient-1--LGW__reg);
+}
+.workcard:nth-child(2) {
+  background: var(--gradient-3--LBW__reg);
+}
+
+.workcard__body {
+  margin: 0 var(--sc-24);
+}
+.workcard__body h3 {
+  margin-bottom: var(--sc-16);
+}
+
+.workcard__description {
+  padding-inline-start: var(--sc-16);
+}
+.workcard__head {
+  border-radius: var(--sc-24);
+}
+
+.workcard__head img {
+  width: 100%;
+  border-radius: inherit;
+}
+.workcard__crick .workcard__head img {
+  box-shadow: 0 var(--sc-8) var(--sc-24) rgba(209, 87, 11, 0.1);
+}
+.workcard__insta .workcard__head img {
+  box-shadow: 0 var(--sc-8) var(--sc-24) hsla(119, 84%, 15%, 0.1);
+}
+
+.workcard__footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: var(--sc-24);
+}
+.workcard__footer button {
+  width: 100%;
+  justify-content: center;
+  margin: 0 var(--sc-24);
+}
+
+/* Smartphones (portrait and smaller) */
+@media (max-width: 480px) {
+  /* Styles for smartphones */
+  .nav__wrapper .showMenuBtn {
+    display: block;
+    line-height: 0;
+  }
+  .sectionHead {
+    padding-top: 4rem;
+    margin-bottom: 3.2rem;
+  }
+  /* Highlights card */
+  .card__wrapper {
+    gap: var(--sc-20);
+    flex-direction: column;
+  }
+  .card__wrapper .card {
+    width: auto;
+    padding: var(--sc-16);
+  }
+  .workcard__wrapper {
+    flex-direction: column;
+  }
+  .workcard {
+    width: auto;
+  }
+  .workcard:nth-child(1),
+  .workcard:nth-child(2) {
+    margin-bottom: 2rem;
+  }
+}

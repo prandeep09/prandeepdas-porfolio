@@ -1,0 +1,147 @@
+/* VARIABLES */
+:root {
+  /* COLOR */
+  --white: #f7f7f7;
+  --white-t: hsla(0, 0%, 97%, 0);
+  --warm-white: #fffaf4;
+  --black: #080808;
+  --grey: #a1a1a1;
+  /* --grey-lightest: #44ac06; */
+  --grey-lighter: #cfcfcf;
+  --grey-light: #b8b8b8;
+  --grey-dark: #787878;
+  --grey-darker: #505050;
+  --grey-darkest: #3e3e3e;
+  --green: #44ac06;
+  --green-lightest: #d3efc3;
+  --green-lighter: #a4dd82;
+  --green-light: #77cc45;
+  --green-dark: #378c05;
+  --green-darker: #255e03;
+  --green-darkest: #081401;
+  --orange: #f3901b;
+  --orange-lightest: #fce8cf;
+  --orange-lighter: #f8c78c;
+  --orange-light: #f6ac54;
+  --orange-dark: #b66c14;
+  --orange-darker: #79480d;
+  /* --orange-darkest: #081401; */
+  --blue: #3a66f8;
+  --blue-lightest: #e2e8fe;
+  --blue-lighter: #9cb2fb;
+  --blue-light: #6c8dfa;
+  --blue-dark: #2c4dba;
+  --blue-darker: #1d337c;
+  /* --blue-darkest: #081401; */
+  --red: #f64c53;
+  --red-lightest: #fdd8da;
+  --red-lighter: #faa5a8;
+  --red-light: #f8797e;
+  --red-dark: #b8393e;
+  --red-darker: #7b2629;
+  /* GRADIENTS */
+  --gradient-1--LGW__reg: linear-gradient(
+    0deg,
+    var(--white-t) 0%,
+    var(--green-lightest) 100%
+  );
+  --gradient-1--LGW__rev: linear-gradient(
+    180deg,
+    var(--white-t) 0%,
+    var(--green-lightest) 100%
+  );
+  --gradient-2--LGO__reg: linear-gradient(
+    180deg,
+    var(--green-lightest) 0%,
+    var(--orange-lightest) 100%
+  );
+  --gradient-3--LBW__reg: linear-gradient(
+    0deg,
+    var(--white-t) 0%,
+    var(--blue-lightest) 100%
+  );
+  /*** FONTS FAMILY ***/
+  --fontFamily-primary: "Montserrat", sans-serif;
+  /* --fontFamily-secondary: "Poppins", sans-serif; */
+  --fontFamily-secondary: "Helvetica", sans-serif;
+  /* FONTS WEIGHT */
+  --fontWight-bold: 700;
+  --fontWight-smiboldbold: 500;
+  --fontWight-regular: 400;
+
+  /* *** FONT SIZE *** */
+  --fontSize-hero-heading: 5.6rem;
+  --fontSize-heading-section: 4.8rem;
+  --fontSize-heading-XL: 4.8rem;
+  --fontSize-heading-L: 3.2rem;
+  --fontSize-heading-M: 2.4rem;
+  --fontSize-heading-S: 1.85rem;
+  --fontSize-paragraph-hero: 1.8rem;
+  --fontSize-paragraph-S: 1.45rem;
+  --fontSize-paragraph-regular: 1.6rem;
+  --fontSize-label-S: 1.25rem;
+
+  /* Line hights = fontsize*1.2 */
+  --lineHeight-hero-heading: 6.8rem;
+  --lineHeight-heading-section: 5.85rem;
+  --lineHeight-heading-XL: 5.85rem;
+  --lineHeight-heading-L: 3.2rem;
+  --lineHeight-heading-M: 2.4rem;
+  --lineHeight-heading-S: 1.85rem;
+  --lineHeight-paragraph-hero: 2.7rem;
+  --lineHeight-paragraph-S: 2.4rem;
+  --lineHeight-paragraph-regular: 1.6rem;
+  --lineHeight-label-S: 1.25rem;
+
+  /* SPACING */
+  /* MARGIN */
+  --margin-fullPage: 0px 10rem;
+  --mb--heroHeading: 4rem;
+  --mb--heroParagraph: 4.8rem;
+
+  /* **** SCALING *** */
+  --sc-4: 0.4rem;
+  --sc-8: 0.8rem;
+  --sc-12: 1.2rem;
+  --sc-16: 1.6rem;
+  --sc-20: 2rem;
+  --sc-24: 2.4rem;
+  --sc-28: 2.8rem;
+  --sc-32: 3.2rem;
+  --sc-40: 4rem;
+  --sc-48: 4.8rem;
+  --sc-56: 5.6rem;
+
+  /* Break points */
+  --smartphone: 480px;
+}
+
+/* Smartphones (portrait and smaller) */
+@media (max-width: 480px) {
+  /* Styles for smartphones */
+  :root {
+    /* *** FONT SIZE *** */
+    --fontSize-hero-heading: 3.6rem;
+    --fontSize-heading-section: 3.2rem;
+    --fontSize-heading-XL: 3.2rem;
+    --fontSize-heading-L: 3.2rem;
+    --fontSize-heading-M: 2.4rem;
+    --fontSize-heading-S: 1.23rem;
+    --fontSize-paragraph-hero: 1.2rem;
+    --fontSize-paragraph-S: 1.2rem;
+    --fontSize-paragraph-regular: 1.06rem;
+    --fontSize-label-S: 1.25rem;
+
+    /* Line hights */
+    --lineHeight-hero-heading: 4.4rem;
+    --lineHeight-heading-XL: 4rem;
+    --lineHeight-heading-section: 4rem;
+    --lineHeight-paragraph-hero: 2.16rem;
+    --lineHeight-paragraph-S: 1.8rem;
+    /* SPACING */
+    /* MARGIN */
+    --margin-fullPage: 0px 0.8rem;
+    --mb--heroHeading: 2.4rem;
+    --mb--heroParagraph: 2.8rem;
+  }
+}
