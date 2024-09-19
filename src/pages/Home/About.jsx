@@ -34,7 +34,7 @@ const About = (props) => {
               />
             </div>
             <div className="about__intro-description">
-              <h1 className="heading__XL mg-b-24">About me</h1>
+              <h1 className="heading__XL mg-b-24 clr-green-darker">About me</h1>
               <p className="mg-b-12">
                 I am a UI/UX designer/developer with 6+ years of development
                 experience, 9+ years of overall experience and a life long
@@ -85,11 +85,11 @@ const About = (props) => {
           <article className="section-wrapper about__value--wrapper">
             <div className="about__value--title ">
               <h3>What makes me</h3>
-              <h1 className="heading__XL">Valuable</h1>
+              <h1 className="heading__XL clr-green-darker">Valuable</h1>
             </div>
             <div className="about__value-decriptionBox">
               <div className="about__value-decription">
-                <h4 className="heading__S mg-b-12">Visual design</h4>
+                <h4 className="heading__S mg-b-12 ">Visual design</h4>
                 <p>
                   My interest and experience in art and sketching help me in
                   creative thinking and visual representation. Form Posters,
@@ -130,7 +130,7 @@ const About = (props) => {
         </section>
         <section className="about__interest">
           <article className="section-wrapper about__interest--wrapper">
-            <h2 className="heading__XL">Personal Interest</h2>
+            <h2 className="heading__XL clr-green-darker">Personal Interest</h2>
             <div className="about__interest--info">
               <div className="about__interst--list">
                 <p>Drawing</p>
@@ -154,7 +154,9 @@ const About = (props) => {
 
         <section className="about__skills">
           <article className="section-wrapper about__skills--wrapper">
-            <h1 className="about__skills--title heading__XL">My key skills</h1>
+            <h1 className="about__skills--title heading__XL clr-green-darker">
+              My key skills
+            </h1>
             <div className="about__skills--description">
               <div className="about__skills--descriptionBox">
                 <h4 className="heading__S mg-b-12">Design Skills</h4>

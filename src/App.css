@@ -28,7 +28,6 @@
   font-size: var(--fontSize-hero-heading);
   font-weight: var(--fontWight-bold);
   line-height: var(--lineHeight-hero-heading);
-  margin-bottom: var(--mb--heroHeading);
 }
 .heading__XL {
   font-size: var(--fontSize-heading-XL);
@@ -68,7 +67,6 @@
   font-size: var(--fontSize-paragraph-hero);
   font-weight: var(--fontWight-regular);
   line-height: var(--lineHeight-paragraph-hero);
-  margin-bottom: var(--mb--heroParagraph);
 }
 
 .paragraph__section {

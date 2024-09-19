@@ -15,7 +15,7 @@ const Hero = () => {
           {/* HERO SECTION LEFT */}
           <div className="hero__right-wrapper">
             <h6 className="heading__S mg-b-24">Prandeep Das</h6>
-            <h1 className="heading__hero">
+            <h1 className="heading__hero mg-b-24">
               <span className="clr-green-darker ">
                 Design & Code Alchemist:
               </span>{" "}
@@ -23,7 +23,7 @@ const Hero = () => {
                 Crafting User Experiences
               </span>
             </h1>
-            <p className="paragraph__hero">
+            <p className="paragraph__hero mg-b-24">
               “Crafting seamless experiences by day, coding pixel-perfect
               websites by night – meet the UX designer who bridges design and
               development.” 🌟💻
