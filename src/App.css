@@ -70,12 +70,12 @@
   line-height: var(--lineHeight-paragraph-hero);
 }
 .paragraph__hero {
-  color: var(--grey);
+  color: var(--grey-dark);
 }
 .paragraph__section {
   width: 74rem;
   margin: 0 auto;
-  color: var(--green);
+  color: var(--green-dark);
 }
 
 /* Smartphones (portrait and smaller) */

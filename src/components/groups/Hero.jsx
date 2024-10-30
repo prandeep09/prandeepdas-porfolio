@@ -54,7 +54,7 @@ const Hero = () => {
               Designer with a 360° View
             </h1>
             <p className="paragraph__hero">
-              Meet the product designer who bridges Design, Development <br />{" "}
+              Meet the Product Alchemist who balances Design, Development <br />{" "}
               and Business.
             </p>
           </div>

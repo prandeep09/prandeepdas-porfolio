@@ -34,9 +34,9 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 1.6rem;
-  height: 1.6rem;
-  background: var(--green-lighter);
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--green-lightest);
   border-radius: var(--corner-round);
 }
 .Section-Devider::after {
@@ -45,8 +45,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.2rem;
+  height: 1.2rem;
   padding: 0.2rem;
   border: 1px dashed var(--green-lighter);
   border-radius: var(--corner-round);

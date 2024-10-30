@@ -32,7 +32,6 @@ const Button = React.forwardRef((props, ref) => {
       <button
         ref={ref}
         onClick={onClick}
-        type="button"
         title="redirect to case studies"
         className={`button-gen button-${btnType} ${altClassName}`}
         type={type}

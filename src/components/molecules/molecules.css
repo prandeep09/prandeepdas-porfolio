@@ -222,7 +222,7 @@
   .HighlightCard__Wrapper {
     flex-direction: column;
     align-items: flex-start;
-    padding: 2.4rem 1.2rem 1.2rem;
+    padding: 2.4rem 0.8rem 0.8rem;
     gap: 1.2rem;
   }
   .HighlightCard__Container {
@@ -230,10 +230,10 @@
     overflow-x: scroll;
     gap: 1.2rem;
   }
-
+  .HighlightCard__Wrapper:nth-child(1),
   .HighlightCard__Wrapper:nth-child(2),
   .HighlightCard__Wrapper:nth-child(3) {
-    width: 100%;
+    min-width: 80%;
   }
 
   .card__wrapper {
