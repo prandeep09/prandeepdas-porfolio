@@ -44,6 +44,9 @@ h5,
 h6,
 p {
   margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 h1,
@@ -98,7 +101,7 @@ button:focus-visible {
 }
 
 /* Smartphones (portrait and smaller) */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* Styles for smartphones */
   html {
     font-size: 100%;

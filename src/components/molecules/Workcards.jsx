@@ -2,7 +2,7 @@ import Button from "../molecules/Button.jsx";
 import Tag from "../atoms/Tag.jsx";
 import cricket_thumbnail from "../../assets/cricket_thumbnail.svg";
 import insta_thumbnail from "../../assets/insta_thumbnail.svg";
-import more_cases_card_bg from "../../assets/more_cases_card_bg.svg";
+import more_cases_card_bg from "../../assets/more_cases_card_bg_2.svg";
 import CricketWirelessPdfFile from "../../assets/Case_study-CSS.pdf";
 import InstaFinancialsPdfFile from "../../assets/Case_study_IF.pdf";
 
@@ -19,7 +19,9 @@ const Workcards = () => {
             <img src={cricket_thumbnail} alt="" />
           </div>
           <div className="workcard__body">
-            <h3>My redesign of a critical feature for Cricket Wirel....</h3>
+            <h3 className="heading__M">
+              My redesign of a critical feature for Cricket Wirel....
+            </h3>
             <div className="workcard__tags--wrapper">
               <span className="tag tag--warning">#Dev</span>
               <span className="tag tag--success">#UX</span>
@@ -35,23 +37,32 @@ const Workcards = () => {
                 ideas at every step has real compounding effect on your
                 solution.
               </li>
-              <li>Looking for inspiration in places which may not......</li>
+              <li>
+                Looking for inspiration in places which may not......{" "}
+                <Button
+                  onClick={() => handleOpenPdf(CricketWirelessPdfFile)}
+                  btnType="link"
+                  btnText="See complete  case study"
+                />
+              </li>
             </ul>
           </div>
-          <div className="workcard__footer">
+          {/* <div className="workcard__footer">
             <Button
               onClick={() => handleOpenPdf(CricketWirelessPdfFile)}
               btnType="outline"
               btnText="See complete  case study"
             />
-          </div>
+          </div> */}
         </article>
         <article className="workcard workcard__insta">
           <div className="workcard__head">
             <img src={insta_thumbnail} alt="" />
           </div>
           <div className="workcard__body">
-            <h3>How I revamped a B2B website with limited....</h3>
+            <h3 className="heading__M">
+              How I revamped a B2B website with limited....
+            </h3>
             <div className="workcard__tags--wrapper">
               <Tag tagType="warning" tagName="#Dev" />
               <Tag tagType="success" tagName="#UX" />
@@ -63,25 +74,31 @@ const Workcards = () => {
             </p>
             <ul className="paragraph__small workcard__description">
               <li>
-                While having more resources is always beneficial, when that’s
-                not an option, it's wise to leverage whatever help you can get
-                from cross-functional teammates. You may need to coach and...
+                It's always good to have more resources, but when you are a solo
+                designer, get help form everyone. You may need to coach and...
+              </li>
+              <li>
+                Learning from the best designs available online is valuable when
+                you have less experience. However, blindly following...
+                <Button
+                  onClick={() => handleOpenPdf(InstaFinancialsPdfFile)}
+                  btnType="link"
+                  btnText="See complete  case study"
+                />
               </li>
             </ul>
           </div>
-          <div className="workcard__footer">
+          {/* <div className="workcard__footer">
             <Button
               onClick={() => handleOpenPdf(InstaFinancialsPdfFile)}
-              btnType="outline"
+              btnType="primary"
               btnText="See complete  case study"
             />
-          </div>
+          </div> */}
         </article>
-        <article className="workcard" style={{ cursor: "not-allowed" }}>
-          <div className="workcard__head">
-            <img src={more_cases_card_bg} alt="" />
-          </div>
-        </article>
+      </article>
+      <article className="workcard--img">
+        <img src={more_cases_card_bg} alt="" />
       </article>
     </>
   );

@@ -2,9 +2,61 @@
 .clr-green-darker {
   color: var(--green-darker);
 }
-.clr-orange-darker {
-  color: var(--orange);
+.clr-green-darkest {
+  color: var(--green-darkest);
 }
+.clr-green {
+  color: var(--green);
+}
+.clr-orange-darker {
+  color: var(--orange-darker);
+}
+.clr-blue-darker {
+  color: var(--blue-darker);
+}
+.clr-green-dark {
+  color: var(--green-dark);
+}
+.clr-orange-dark {
+  color: var(--orange-dark);
+}
+.clr-blue-dark {
+  color: var(--blue-dark);
+}
+.clr-red-dark {
+  color: var(--red-dark);
+}
+.clr-red-darker {
+  color: var(--red-darker);
+}
+
+.clr-grey-lighter {
+  color: var(--grey-lighter);
+}
+.clr-grey-dark {
+  color: var(--grey-dark);
+}
+
+/* FONT-SIZE */
+.fs-xs {
+  font-size: 1rem;
+}
+.fs-sm {
+  font-size: 1.2rem;
+}
+
+/* ALIGNMENT */
+/* text */
+.txt-a-c {
+  text-align: center;
+}
+.txt-a-l {
+  text-align: left;
+}
+.txt-a-r {
+  text-align: right;
+}
+
 /* MARGINS */
 .mg-t {
   margin-top: var();
@@ -44,4 +96,31 @@
 }
 .mg-b-56 {
   margin-bottom: var(--sc-56);
+}
+
+/* PADDING */
+
+.pd-t-xs {
+  padding-top: 0.8rem;
+}
+.pd-t-sm {
+  padding-top: 1.2rem;
+}
+.pd-t-md {
+  padding-top: 1.6rem;
+}
+.pd-t-lg {
+  padding-top: 2.4rem;
+}
+.pd-t-xl {
+  padding-top: 3.6rem;
+}
+.pd-t-xxl {
+  padding-top: 4.8rem;
+}
+.pd-t-72 {
+  padding-top: 7.2rem;
+}
+.pd-t-96 {
+  padding-top: 9.6rem;
 }

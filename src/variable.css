@@ -2,11 +2,14 @@
 :root {
   /* COLOR */
   --white: #f7f7f7;
+  --white-90: hsla(0, 0%, 97%, 0.9);
   --white-t: hsla(0, 0%, 97%, 0);
   --warm-white: #fffaf4;
+  --warm-white-90: hsla(33, 100%, 98%, 0.9);
   --black: #080808;
   --grey: #a1a1a1;
   /* --grey-lightest: #44ac06; */
+  --grey-lightest: #e8e8e8;
   --grey-lighter: #cfcfcf;
   --grey-light: #b8b8b8;
   --grey-dark: #787878;
@@ -45,10 +48,20 @@
     var(--white-t) 0%,
     var(--green-lightest) 100%
   );
+  --gradient-1--LGW__reg--90: linear-gradient(
+    90deg,
+    var(--white-t) 30%,
+    var(--green-lightest) 50%
+  );
   --gradient-1--LGW__rev: linear-gradient(
     180deg,
     var(--white-t) 0%,
     var(--green-lightest) 100%
+  );
+  --gradient-1--LOW__reg--270: linear-gradient(
+    270deg,
+    var(--white-t) 30%,
+    var(--orange-lightest) 50%
   );
   --gradient-2--LGO__reg: linear-gradient(
     180deg,
@@ -60,10 +73,27 @@
     var(--white-t) 0%,
     var(--blue-lightest) 100%
   );
+  --gradient-3--LGW__195: linear-gradient(
+    195deg,
+    var(--white-t) 0%,
+    var(--green-lightest) 100%
+  );
+  --gradient-3--LOW__195: linear-gradient(
+    195deg,
+    var(--white-t) 0%,
+    var(--orange-lightest) 100%
+  );
+  --gradient-3--LBW__195: linear-gradient(
+    195deg,
+    var(--white-t) 0%,
+    var(--blue-lightest) 100%
+  );
+  /* SHADOW */
+  --shadow-1: 0 2rem 3rem 0 rgba(8, 8, 8, 5%);
   /*** FONTS FAMILY ***/
-  --fontFamily-primary: "Montserrat", sans-serif;
+  --fontFamily-primary: "Lora", sans-serif;
   /* --fontFamily-secondary: "Poppins", sans-serif; */
-  --fontFamily-secondary: "Helvetica", sans-serif;
+  --fontFamily-secondary: "Roboto", sans-serif;
   /* FONTS WEIGHT */
   --fontWight-bold: 700;
   --fontWight-smiboldbold: 500;
@@ -93,9 +123,19 @@
   --lineHeight-paragraph-regular: 1.6rem;
   --lineHeight-label-S: 1.25rem;
 
+  /* SHAPE */
+  --corner-0: 0;
+  --corner-xs: 0.2rem;
+  --corner-sm: 0.4rem;
+  --corner-md: 1.2rem;
+  --corner-lg: 1.6rem;
+  --corner-xl: 2.8rem;
+  --corner-round: 99rem;
+
   /* SPACING */
   /* MARGIN */
   --margin-fullPage: 0px 10rem;
+  --margin-center: 0 auto;
   --mb--heroHeading: 4rem;
   --mb--heroParagraph: 4.8rem;
 
@@ -117,7 +157,7 @@
 }
 
 /* Smartphones (portrait and smaller) */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* Styles for smartphones */
   :root {
     /* *** FONT SIZE *** */
@@ -125,7 +165,7 @@
     --fontSize-heading-section: 3.2rem;
     --fontSize-heading-XL: 3.2rem;
     --fontSize-heading-L: 3.2rem;
-    --fontSize-heading-M: 2.4rem;
+    --fontSize-heading-M: 1.85rem;
     --fontSize-heading-S: 1.23rem;
     --fontSize-paragraph-hero: 1.2rem;
     --fontSize-paragraph-S: 1.2rem;
@@ -135,6 +175,7 @@
     /* Line hights */
     --lineHeight-hero-heading: 4.4rem;
     --lineHeight-heading-XL: 4rem;
+    --lineHeight-heading-M: calc(1.85rem * 1.3);
     --lineHeight-heading-section: 4rem;
     --lineHeight-paragraph-hero: 2.16rem;
     --lineHeight-paragraph-S: 1.8rem;

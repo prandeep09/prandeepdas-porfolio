@@ -1,46 +1,158 @@
 /* Section */
 .section {
-  /* padding-bottom: 7.2rem; */
-  padding-bottom: 14.4rem;
+  padding-bottom: 10.4rem;
 }
 /* Hero */
-.hero {
-  background: var(--gradient-2--LGO__reg);
-  padding-bottom: 7.2rem;
+.Blur__Circle--Container {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  max-width: 1200px;
+  height: 50vh;
+}
+.Blur__Circle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    105deg,
+    var(--green-lighter),
+    var(--orange-lighter)
+  );
+  filter: blur(10rem);
 }
 .hero__wrapper {
   display: flex;
-}
-.hero__right-wrapper,
-.hero__left-wrapper {
-  width: 50%;
-}
-.hero__right-wrapper {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 20rem;
+  padding-bottom: 9.6rem;
 }
-
-.hero__wrapper div {
-  margin: 0 var(--sc-8);
+.hero__text-container {
+  margin: var(--margin-center);
+  padding-bottom: 9.6rem;
 }
-.hero__left-wrapper .hero__illustration {
+.hero__text-container h4 {
+  font-weight: var(--fontWight-regular);
+  margin-bottom: 0.2rem;
+}
+.hero__text-container p {
+  text-align: center;
+}
+.Hero__Image-wrapper {
+  position: relative;
+  height: 38rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.Hero__Image--bg {
+  width: 48%;
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.Hero__Image--bgCircle {
+  width: 52%;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 30s linear infinite;
+  /* you can find the respective animation in the src/CSS/animation.css file */
+}
+.Hero__Image--Blurbg {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.Hero__State--BBox {
+  position: absolute;
+  z-index: 4;
+  padding: 3.2rem 2.4rem;
+  border-radius: var(--corner-round);
+  box-shadow: var(--shadow-1);
+  display: inline-block;
+}
+.Hero__State--BBox-Left {
+  left: 15%;
+  background: var(--gradient-1--LGW__reg--90);
+}
+.Hero__State--BBox-Right {
+  right: 8%;
+  bottom: 12%;
+  background: var(--gradient-1--LOW__reg--270);
+}
+.Hero__State--SBox {
+  position: absolute;
+  z-index: 4;
+  padding: 1.2rem 1.6rem;
+  border-radius: var(--corner-xl);
+  box-shadow: var(--shadow-1);
+  display: inline-block;
+  background: var(--white);
+  font-size: 1.2rem;
+}
+.Hero__State--SBox--IXDF {
+  left: 19%;
+  top: 33%;
+}
+.Hero__State--SBox--PSM {
+  left: 23%;
+  bottom: 10%;
+}
+.Hero__State--SBox--PSD {
+  right: 38%;
+  bottom: -7%;
+}
+.Hero__State--SBox--AZ {
+  right: 19%;
+  top: 20%;
+}
+.Hero__Deviderline {
+  position: absolute;
+  top: 50%;
+  border-top: 1px dashed var(--green-lightest);
+  display: block;
   width: 100%;
+  height: 1px;
 }
 
 /* Navbar */
 .nav {
-  /* background-color: #ddd; */
   font-family: var(--fontFamily-primary);
   font-weight: var(--fontWight-bold);
 }
 .nav__wrapper {
-  margin: var(--margin-fullPage);
-  padding: 4.8rem 0;
+  z-index: 999999;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  top: 4rem;
+  max-width: 120rem;
+  height: 4.8rem;
+  margin: var(--margin-center);
+  padding: 1.2rem 2.4rem;
+  border-radius: var(--corner-lg);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 8rem;
+  background: var(--warm-white-90);
+  border: 2px solid var(--white);
+  backdrop-filter: blur(4px);
+  box-shadow: var(--shadow-1);
 }
 .logo {
   height: 100%;
@@ -53,20 +165,23 @@
 .logo.portfolioLogo:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+
 .nav__wrapper a {
   height: 100%;
 }
 
 .nav__links {
-  width: 45%;
-  margin: 0 3.2rem;
+  width: 60%;
+  gap: 4.8rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
 }
 
 .nav__links li {
   list-style-type: none;
   color: var(--green-darker);
+  font-weight: 500;
+  font-family: var(--fontFamily-secondary);
 }
 
 .nav__links li a {
@@ -79,61 +194,83 @@
 
 /* Heighlights */
 
-.heighlights {
-  background: var(--gradient-1--LGW__rev);
-  padding-bottom: 7.2rem;
+.Highlights__Company {
+  padding-top: 5.6rem;
+  padding-bottom: 4.8rem;
+}
+
+.Highlights__Company--Container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10.4rem;
 }
 
 /* Footer */
 
-.footer {
-  background: url("../../assets/Footer.svg");
-  background-size: cover; /* Makes the image cover the whole area */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  height: auto; /* Set a height for the div */
-  width: 100%; /* Set width as needed */
+/* NEW FOOTER STYLE */
+.Footer__Container {
+  padding: 9.6rem 0;
+}
+.Footer__Container h2 {
+  padding-bottom: 7.2rem;
+}
+.Footer__Content {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  gap: 2.4rem;
+  justify-content: center;
 }
-.footer__top {
-  padding: 7.2rem 10rem;
-  margin: auto 0;
+.Footer__Content--Contact,
+.Footer__Content--Social {
+  background: var(--warm-white);
+  box-shadow: var(--shadow-1);
+  padding: 0 1.6rem;
+  border-radius: var(--corner-lg);
+  height: fit-content;
 }
-
+.Footer__Content--Contact,
+.Footer__Content--Social {
+  padding: 2.4rem;
+}
+.Footer__Content--Contact ul,
+.Footer__Content--Social ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+.Footer__Content--Contact ul:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+.Footer__Content--Social li a {
+  max-width: 7.2rem;
+  display: inline-block;
+  padding: 1.2rem;
+  border: 1px solid var(--blue-lightest);
+  border-radius: var(--corner-round);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Footer__Content--Social li a img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 4rem rgba(17, 212, 75, 0.1);
+}
 .footer__bottom {
   text-align: center;
-  background: var(--green-darker);
+  background: linear-gradient(
+    195deg,
+    var(--green) 0%,
+    var(--green-darker) 100%
+  );
   display: flex;
   justify-content: center;
   color: var(--white);
   padding: var(--sc-24) 0;
-}
-.contact {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.contact__info {
-  /* border: 1px solid var(--green);
-  border-radius: var(--sc-24); */
-}
-.contact__infoitem {
-  display: flex;
-  align-items: center;
-  gap: var(--sc-12);
-  padding: 1.2rem;
-  border-radius: 1.6rem;
-  background: #44ac0621;
-  margin-bottom: 1.6rem;
-}
-
-.social__info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--sc-8);
-  width: 26rem;
 }
 
 .icon--circle {
@@ -177,9 +314,173 @@
   color: var(--warm-white);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+  .nav {
+    padding: 0 1.2rem;
+  }
   .section {
-    padding-bottom: 4rem;
+    padding-bottom: 6.4rem;
+  }
+  /* Hero */
+  .Blur__Circle--Container {
+    top: -40%;
+    left: -20%;
+    width: 100%;
+  }
+  .hero__wrapper {
+    padding-top: 10rem;
+    padding-bottom: 3.2rem;
+  }
+  .hero__wrapper div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .hero__right-wrapper,
+  .hero__left-wrapper {
+    width: auto;
+  }
+  .hero__wrapper .hero__right-wrapper {
+    margin-bottom: 3.2rem;
+  }
+  .hero__text-container {
+    padding-bottom: 3.2rem;
+  }
+  .Hero__Image-wrapper {
+    height: 20rem;
+  }
+  .Hero__Image--bg {
+    width: 68%;
+  }
+  .Hero__Image--bgCircle {
+    width: 72%;
+  }
+  .Hero__Image--Blurbg {
+    width: 100%;
+  }
+  .Hero__State--BBox {
+    padding: 0.8rem 1.6rem;
+  }
+  .Hero__State--BBox-Left {
+    left: 0%;
+    top: 0%;
+  }
+  .Hero__State--BBox-Right {
+    right: 0%;
+    bottom: 5%;
+  }
+  .Hero__State--BBox-Left p,
+  .Hero__State--BBox-Right p,
+  .Hero__State--BBox-Left h4,
+  .Hero__State--BBox-Right h4 {
+    font-size: 0.8rem;
+  }
+  .Hero__State--SBox {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+  }
+
+  .Hero__State--SBox--IXDF {
+    left: 4%;
+    top: 33%;
+  }
+  .Hero__State--SBox--PSM {
+    left: 4%;
+    bottom: 24%;
+  }
+  .Hero__State--SBox--PSD {
+    right: 5%;
+    bottom: 27%;
+  }
+  .Hero__State--SBox--AZ {
+    right: 7%;
+    top: 20%;
+  }
+
+  /* Highlights */
+  .Highlights__Company--Container {
+    gap: 2.4rem;
+  }
+
+  /* Footer */
+  /* .footer__top {
+    padding: 4rem 0.8rem;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contact__info {
+    width: 100%;
+  }
+  .icon--circle {
+    width: 2rem;
+    height: 2rem;
+  }
+  .footer__bottom {
+    padding: 1.6rem var(--sc-24);
+  }
+  .social__info {
+    width: auto;
+    padding-top: 2.4rem;
+  }
+  .social__info a {
+    width: auto;
+  }
+  .social__info a img {
+    width: 4rem;
+  } */
+  .nav__wrapper {
+    padding: 1.2rem;
+    height: 3.2rem;
+    top: 2%;
+  }
+  .nav__links {
+    display: none;
+  }
+  .menu__dropdown.show {
+    display: inline-block;
+  }
+
+  /* Footer */
+  .Footer__Container {
+    padding: 4.8rem 0;
+  }
+  .Footer__Container h2 {
+    padding-bottom: 3.2rem;
+  }
+  .Footer__Content {
+    flex-direction: column;
+  }
+  .Footer__Content--Social li a {
+    width: 4.2rem;
+  }
+  .footer__bottom {
+    padding: 1.6rem var(--sc-24);
+  }
+  .Footer__Content--Contact,
+  .Footer__Content--Social {
+    padding: 1.2rem;
+  }
+}
+
+/* Tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets in portrait mode */
+
+  /* .nav {
+    padding: 0 4.8rem;
+  }*/
+  /* .nav__wrapper {
+   padding: 2.4rem 0 7.2rem 0;
+   height: 5.6rem;
+ } */
+  .nav__links {
+    display: none;
+  }
+  .menu__dropdown.show {
+    display: inline-block;
+  }
+  .section {
+    padding-bottom: 7.2rem;
   }
   /* Hero */
   .hero__wrapper {
@@ -196,12 +497,20 @@
   .hero__wrapper .hero__right-wrapper {
     margin-bottom: 3.2rem;
   }
+
   /* Footer */
   .footer__top {
     padding: 4rem 0.8rem;
   }
   .contact {
     flex-direction: column;
+  }
+  .contact__info {
+    width: 100%;
+  }
+  .icon--circle {
+    width: 2rem;
+    height: 2rem;
   }
   .footer__bottom {
     padding: 1.6rem var(--sc-24);
@@ -215,15 +524,5 @@
   }
   .social__info a img {
     width: 4rem;
-  }
-  .nav__wrapper {
-    padding: 2.4rem 0;
-    height: 3.2rem;
-  }
-  .nav__links {
-    display: none;
-  }
-  .menu__dropdown.show {
-    display: inline-block;
   }
 }

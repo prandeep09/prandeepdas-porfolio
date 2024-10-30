@@ -26,8 +26,9 @@
 /* Headings */
 .heading__hero {
   font-size: var(--fontSize-hero-heading);
-  font-weight: var(--fontWight-bold);
+  font-weight: var(--fontWight-regular);
   line-height: var(--lineHeight-hero-heading);
+  color: var(--green-darker);
 }
 .heading__XL {
   font-size: var(--fontSize-heading-XL);
@@ -42,13 +43,13 @@
 .heading__M {
   font-size: var(--fontSize-heading-M);
   font-weight: var(--fontWight-bold);
-  line-height: 2.93rem;
+  line-height: var(--lineHeight-heading-M);
 }
 
 .heading__S {
   font-size: var(--fontSize-heading-S);
   font-weight: var(--fontWight-bold);
-  line-height: 2.76rem;
+  line-height: var(--lineHeight-heading-S);
 }
 .heading__section {
   font-size: var(--fontSize-heading-section);
@@ -68,7 +69,9 @@
   font-weight: var(--fontWight-regular);
   line-height: var(--lineHeight-paragraph-hero);
 }
-
+.paragraph__hero {
+  color: var(--grey);
+}
 .paragraph__section {
   width: 74rem;
   margin: 0 auto;
@@ -76,13 +79,22 @@
 }
 
 /* Smartphones (portrait and smaller) */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* Styles for smartphones */
   /* .heading__XL {
     font-size: var(--fontSize-heading-XL--mobile);
     font-weight: var(--fontWight-bold);
     line-height: 4.5rem;
   } */
+  .paragraph__section {
+    width: auto;
+  }
+}
+
+/* Tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets in portrait mode */
+
   .paragraph__section {
     width: auto;
   }

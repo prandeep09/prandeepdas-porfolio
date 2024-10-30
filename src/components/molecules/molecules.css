@@ -19,6 +19,7 @@
   background: var(--green);
   outline-color: var(--green);
   background-color: var(--green);
+  color: var(--white);
 }
 .button-outline {
   border: 0.15rem solid var(--green);
@@ -26,7 +27,16 @@
   outline-color: var(--green);
   background: transparent;
 }
+.button-link {
+  background: transparent;
+  color: var(--green);
+  padding: 1.6rem 0;
+  text-decoration: underline;
+}
 
+.button-primary:hover {
+  color: var(--white);
+}
 .button-primary:hover,
 .button-outline:hover {
   background: var(--green-dark);
@@ -40,39 +50,69 @@
 /* sectionHead */
 
 .sectionHead {
-  padding-top: 14.4rem;
-  margin-bottom: 12rem;
+  margin-bottom: 8.8rem;
   text-align: center;
 }
 
 /* Cards */
-.card__wrapper {
-  display: flex;
-  gap: var(--sc-24);
-}
 
-.card {
-  width: 35rem;
-  padding: 4.8rem;
-  background: var(--white);
-  border-radius: var(--sc-28);
-}
-.card__head {
+.HighlightCard__Container {
   display: flex;
-  align-items: baseline;
-  justify-content: left;
-  margin-bottom: var(--sc-40);
-}
-.card__head img {
+  flex-wrap: wrap;
+  max-width: 120rem;
   width: 100%;
-  height: auto;
+  row-gap: 2.4rem;
+  justify-content: space-between;
+}
+.HighlightCard__subContainer--1 {
+  display: flex;
+}
+.HighlightCard__subContainer--2 {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: space-between;
+}
+.HighlightCard__Wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: var(--corner-lg);
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+.HighlightCard__Wrapper:nth-child(1) {
+  width: 100%;
+  border: 1px solid var(--blue-lightest);
+}
+.HighlightCard__Wrapper:nth-child(2) {
+  border: 1px solid var(--green-lightest);
+}
+.HighlightCard__Wrapper:nth-child(3) {
+  border: 1px solid var(--orange-lightest);
+}
+.HighlightCard__Wrapper:nth-child(2),
+.HighlightCard__Wrapper:nth-child(3) {
+  width: calc(100% / 2 - 6.1rem);
+}
+.HighlightCard__TextBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 2.4rem;
+  background: var(--gradient-3--LBW__105);
+  box-shadow: var(--shadow-1);
+  border-radius: var(--corner-lg);
 }
 
-.card__body h4 {
-  margin-bottom: var(--sc-12);
+.HighlightCard__Wrapper:nth-child(1) .HighlightCard__TextBox {
+  background: var(--gradient-3--LBW__195);
 }
-.card__body h3 {
-  margin-bottom: var(--sc-16);
+
+.HighlightCard__Wrapper:nth-child(2) .HighlightCard__TextBox {
+  background: var(--gradient-3--LGW__195);
+}
+
+.HighlightCard__Wrapper:nth-child(3) .HighlightCard__TextBox {
+  background: var(--gradient-3--LOW__195);
 }
 
 /* Workcard */
@@ -85,27 +125,33 @@
 
 .workcard__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  gap: 2.4rem;
+  margin-bottom: 2.4rem;
 }
 .workcard {
-  width: 35rem;
+  width: auto;
   display: flex;
   flex-direction: column;
   gap: var(--sc-24);
   border-radius: var(--sc-24);
-}
-.workcard:not(:last-child) {
-  border: 1px solid var(--green-lighter);
+  padding: 2.4rem;
 }
 .workcard:nth-child(1) {
-  background: var(--gradient-1--LGW__reg);
+  border: 1px solid var(--green-lightest);
+  /* background: var(--gradient-1--LGW__reg); */
 }
 .workcard:nth-child(2) {
-  background: var(--gradient-3--LBW__reg);
+  border: 1px solid var(--blue-lightest);
+  /* background: var(--gradient-3--LBW__reg); */
 }
 
 .workcard__body {
-  margin: 0 var(--sc-24);
+  box-shadow: var(--shadow-1);
+  padding: 2.4rem;
+  border-radius: var(--corner-lg);
 }
 .workcard__body h3 {
   margin-bottom: var(--sc-16);
@@ -116,6 +162,7 @@
 }
 .workcard__head {
   border-radius: var(--sc-24);
+  box-shadow: var(--shadow-1);
 }
 
 .workcard__head img {
@@ -139,9 +186,24 @@
   justify-content: center;
   margin: 0 var(--sc-24);
 }
+.workcard--img {
+  max-width: 120rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sc-24);
+  border-radius: var(--sc-24);
+  padding: 2.4rem;
+  cursor: not-allowed;
+  padding: 0;
+}
+.workcard--img image {
+  width: 100%;
+  height: auto;
+}
 
 /* Smartphones (portrait and smaller) */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* Styles for smartphones */
   .nav__wrapper .showMenuBtn {
     display: block;
@@ -152,6 +214,28 @@
     margin-bottom: 3.2rem;
   }
   /* Highlights card */
+
+  .HighlightCard__TextBox {
+    gap: 1.2rem;
+    padding: 1.2rem;
+  }
+  .HighlightCard__Wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.4rem 1.2rem 1.2rem;
+    gap: 1.2rem;
+  }
+  .HighlightCard__Container {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 1.2rem;
+  }
+
+  .HighlightCard__Wrapper:nth-child(2),
+  .HighlightCard__Wrapper:nth-child(3) {
+    width: 100%;
+  }
+
   .card__wrapper {
     gap: var(--sc-20);
     flex-direction: column;
@@ -165,9 +249,51 @@
   }
   .workcard {
     width: auto;
+    padding: 0.8rem;
+    gap: 1.2rem;
   }
   .workcard:nth-child(1),
   .workcard:nth-child(2) {
     margin-bottom: 2rem;
+  }
+  .workcard__body {
+    padding: 0.8rem;
+  }
+  .workcard--img {
+    width: auto;
+    gap: 1.2rem;
+  }
+}
+
+/* Tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets in portrait mode */
+  .nav__wrapper .showMenuBtn {
+    display: block;
+    line-height: 0;
+  }
+  .sectionHead {
+    padding-top: 4rem;
+    margin-bottom: 3.2rem;
+  }
+  /* Highlights card */
+
+  .HighlightCard__Wrapper:nth-child(2),
+  .HighlightCard__Wrapper:nth-child(3) {
+    flex-direction: column;
+  }
+  .workcard__wrapper {
+    flex-direction: column;
+  }
+  .workcard {
+    width: auto;
+  }
+  .workcard:nth-child(1),
+  .workcard:nth-child(2) {
+    margin-bottom: 2rem;
+  }
+  .workcard__head {
+    width: 50%;
+    height: auto;
   }
 }

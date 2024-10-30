@@ -11,10 +11,12 @@ const Works = () => {
           <SectionHead
             sectionName={sectionData[1]?.sectionName}
             sectionDescription={sectionData[1]?.sectionDescription}
+            paddingTop="pd-t-72"
           />
           <Workcards />
         </article>
       </section>
+      <div className="Section-Devider"></div>
     </>
   );
 };

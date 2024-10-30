@@ -25,7 +25,7 @@ import "./molecules.css";
 //   );
 // };
 const Button = React.forwardRef((props, ref) => {
-  const { onClick, btnType, btnText, btnIconRight, altClassName } = props;
+  const { onClick, btnType, btnText, btnIconRight, altClassName, type } = props;
 
   return (
     <>
@@ -35,6 +35,7 @@ const Button = React.forwardRef((props, ref) => {
         type="button"
         title="redirect to case studies"
         className={`button-gen button-${btnType} ${altClassName}`}
+        type={type}
       >
         {btnText}
         {btnIconRight ? btnIconRight : null}

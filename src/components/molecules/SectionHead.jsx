@@ -1,7 +1,7 @@
-const SectionHead = ({ sectionName, sectionDescription }) => {
+const SectionHead = ({ sectionName, sectionDescription, paddingTop }) => {
   return (
     <>
-      <article className="sectionHead">
+      <article className={`sectionHead ${paddingTop}`}>
         <h1 className="heading__section clr-green-darker mg-b-24">
           {sectionName}
           {/* Career Highlights */}

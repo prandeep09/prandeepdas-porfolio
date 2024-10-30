@@ -55,9 +55,14 @@ const Navbar = () => {
               <a href="#sectionWork">Work</a>
             </li>
             {/* <li className="heading__S">
+              <a href="#sectionWork">Case Study</a>
+            </li> */}
+            {/* <li className="heading__S">
               <Link to="/portfolio">portfolio</Link>
             </li> */}
-            <li className="heading__S">Contact</li>
+            <li className="heading__S">
+              <a href="#footerSection">Contact</a>
+            </li>
           </ul>
           <Button
             onClick={handleMenu}
@@ -81,9 +86,14 @@ const Navbar = () => {
               </li>
               <li className="heading__S">
                 <a onClick={handleMenuItemClick} href="#sectionWork">
-                  Work
+                  Works
                 </a>
               </li>
+              {/* <li className="heading__S">
+                <a onClick={handleMenuItemClick} href="#sectionWork">
+                  Case Study
+                </a>
+              </li> */}
               <li className="heading__S">
                 <a onClick={handleMenuItemClick} href="#footerSection">
                   Contact
