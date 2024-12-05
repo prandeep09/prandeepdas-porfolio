@@ -8,11 +8,13 @@ import Modal from "../../components/groups/Modal.jsx";
 import cricket_thumbnail from "../../assets/cricket_thumbnail.svg";
 import insta_thumbnail from "../../assets/insta_thumbnail.svg";
 import more_cases_card_bg from "../../assets/more_cases_card_bg_2.svg";
-import casestudyImages from "../../metadata/casestudyimages.json";
+import casestudyImages from "../../metadata/casestudyimages.js";
 
 const Workcards = () => {
   const [isCS1ModalOpen, setIsCS1ModalOpen] = useState(false);
   const [isCS2ModalOpen, setIsCS2ModalOpen] = useState(false);
+
+  console.log("images", casestudyImages);
 
   const toggleModal = (id) => {
     if (id === "cs1") {
