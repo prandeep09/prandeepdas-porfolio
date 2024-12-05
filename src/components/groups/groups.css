@@ -128,6 +128,32 @@
   width: 100%;
   height: 1px;
 }
+.type-annimation span {
+  position: relative;
+  margin-right: 8px;
+}
+.type-annimation span::before {
+  content: "Designer";
+  color: #ff7f50;
+  animation: words 20s infinite;
+}
+.type-annimation span::after {
+  position: absolute;
+  right: -0.8rem;
+  content: "";
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 2px solid var(--orange);
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: var(--warm-white);
+  border-left: 2px solid var(--orange);
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+  animation-delay: 1s;
+}
 
 /* Navbar */
 .nav {
@@ -445,39 +471,14 @@
     right: 7%;
     top: 20%;
   }
+  .type-annimation span::after {
+    background-color: #faf4e5;
+  }
 
   /* Highlights */
   .Highlights__Company--Container {
     gap: 2.4rem;
   }
-
-  /* Footer */
-  /* .footer__top {
-    padding: 4rem 0.8rem;
-  }
-  .contact {
-    flex-direction: column;
-  }
-  .contact__info {
-    width: 100%;
-  }
-  .icon--circle {
-    width: 2rem;
-    height: 2rem;
-  }
-  .footer__bottom {
-    padding: 1.6rem var(--sc-24);
-  }
-  .social__info {
-    width: auto;
-    padding-top: 2.4rem;
-  }
-  .social__info a {
-    width: auto;
-  }
-  .social__info a img {
-    width: 4rem;
-  } */
   .nav__wrapper {
     padding: 1.2rem;
     height: 3.2rem;
@@ -488,6 +489,11 @@
   }
   .menu__dropdown.show {
     display: inline-block;
+  }
+
+  /* MODAL */
+  .modal-content {
+    padding: 0.4rem;
   }
 
   /* Footer */

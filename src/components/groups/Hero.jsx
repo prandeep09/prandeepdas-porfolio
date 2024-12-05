@@ -70,17 +70,17 @@ const Hero = () => {
               variants={fadeUPVariants}
               initial="hidden"
               animate="show"
-              className="heading__S clr-grey-dark"
+              className="heading__M clr-grey-dark"
             >
-              Prandeep Das
+              Prandeep Das, I'm a <span></span>
             </motion.h4>
             <motion.h1
               variants={fadeUPVariants}
               initial="hidden"
               animate="show"
-              className="heading__hero txt-a-c mg-b-8"
+              className="heading__hero txt-a-c mg-b-8 type-annimation"
             >
-              Designer with a 360° View
+              <span></span> with a 360° View
             </motion.h1>
             <motion.p
               variants={fadeUPVariants}
