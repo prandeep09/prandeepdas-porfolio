@@ -151,7 +151,7 @@
   justify-content: space-between;
   background: var(--warm-white-90);
   border: 2px solid var(--white);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(1px);
   box-shadow: var(--shadow-1);
 }
 .logo {
@@ -191,6 +191,10 @@
 .nav__links li a:hover {
   opacity: 0.75;
 }
+.nav__links li a:active,
+.nav__links li a:focus {
+  color: var(--green);
+}
 
 /* Heighlights */
 
@@ -205,6 +209,52 @@
   align-items: center;
   justify-content: center;
   gap: 10.4rem;
+}
+
+.Highlights__Company--Container,
+.Highlights__Company--Container,
+.Highlights__Company--logoBox {
+  animation: slidedown linear;
+  animation-delay: 2s;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+/* Modal */
+/* src/components/Modal.css */
+.modal-overlay {
+  z-index: 9999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Start hidden */
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
+.modal-overlay.fade-in {
+  /* opacity: 1; Fully visible */
+  pointer-events: auto; /* Allow interaction when visible */
+}
+
+.modal-overlay.fade-out {
+  /* opacity: 0; Fully hidden */
+}
+
+.modal-content {
+  background: var(--warm-white);
+  padding: 2rem;
+  border-radius: var(--corner-md);
+  position: relative;
+}
+
+.modal-overlay.fade-in .modal-content {
+  transform: translateY(0); /* Move into place when visible */
 }
 
 /* Footer */

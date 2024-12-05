@@ -183,18 +183,7 @@
 .about__skills {
   background: var(--gradient-1--LGW__rev);
 }
-.about__skills--wrapper {
-  /* display: grid;
-  grid-template-columns: 1fr 2fr; */
-}
-/* .about__skills--descriptionBox {
-  padding-bottom: var(--sc-32);
-  }
-  
-  .about__skills--descriptionBox:nth-child(-n + 2) {
-    margin-bottom: 4.8rem;
-    border-bottom: 1px solid var(--green-lighter);
-    } */
+
 .about__skills-listBox {
   display: flex;
   gap: 2.4rem;
@@ -314,9 +303,6 @@
   }
   .about__skills {
     padding: 4rem 0;
-  }
-  .about__skills--wrapper {
-    grid-template-columns: 1fr;
   }
 
   .about__skills--descriptionBox:nth-child(-n + 2) {

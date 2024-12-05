@@ -44,6 +44,11 @@
 .button-outline:hover {
   background: var(--green-lightest);
 }
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 .nav__wrapper .showMenuBtn {
   display: none;
 }
@@ -52,6 +57,9 @@
 .sectionHead {
   margin-bottom: 8.8rem;
   text-align: center;
+  animation: slidedown linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 /* Cards */

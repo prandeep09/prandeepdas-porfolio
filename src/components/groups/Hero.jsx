@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import HeroIllustration from "../../assets/Hero_illustration.svg";
 import HeroImage from "../../assets/Hero_image_v3.svg";
 import HeroImageBorderCircle from "../../assets/Hero_circle.svg";
@@ -8,8 +9,21 @@ import Button from "../molecules/Button";
 import { CheveronRight } from "../atoms/Icon.jsx";
 import "./groups.css";
 import "../../CSS/animation.css";
+import { delay } from "motion";
 
 const Hero = () => {
+  const fadeUPVariants = {
+    hidden: { opacity: 0, y: 100 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+        delay: 0.2,
+      },
+    },
+  };
   return (
     <>
       <section className="hero">
@@ -49,16 +63,42 @@ const Hero = () => {
         {/* NEW */}
         <article className="hero__wrapper section-wrapper">
           <div className="hero__text-container">
-            <h4 className="heading__S clr-grey-dark">Prandeep Das</h4>
-            <h1 className="heading__hero txt-a-c mg-b-8">
+            <motion.h4
+              // initial={{ y: 100, opacity: 0 }}
+              // animate={{ y: 0, opacity: 1 }}
+              // transition={{ duration: 0.6, delay: 0, ease: "linear" }}
+              variants={fadeUPVariants}
+              initial="hidden"
+              animate="show"
+              className="heading__S clr-grey-dark"
+            >
+              Prandeep Das
+            </motion.h4>
+            <motion.h1
+              variants={fadeUPVariants}
+              initial="hidden"
+              animate="show"
+              className="heading__hero txt-a-c mg-b-8"
+            >
               Designer with a 360° View
-            </h1>
-            <p className="paragraph__hero">
+            </motion.h1>
+            <motion.p
+              variants={fadeUPVariants}
+              initial="hidden"
+              animate="show"
+              className="paragraph__hero"
+            >
               Meet the Product Alchemist who balances Design, Development <br />{" "}
               and Business.
-            </p>
+            </motion.p>
           </div>
-          <div className="Hero__Image-Container">
+          <motion.div
+            variants={fadeUPVariants}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 1 }}
+            className="Hero__Image-Container"
+          >
             <div className="Hero__Image-wrapper">
               <img
                 className="Hero__Image--bg"
@@ -96,7 +136,7 @@ const Hero = () => {
                 AZ-900
               </span>
             </div>
-          </div>
+          </motion.div>
         </article>
         <div className="Section-Devider">
           {/* <img src={SectionDevider} alt="A section devider" /> */}

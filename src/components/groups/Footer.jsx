@@ -32,7 +32,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="https://www.behance.net/gallery"
+                      href="https://www.instagram.com/empathytodesign/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -50,7 +50,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.behance.net/gallery"
+                      href="https://www.behance.net/prandeepdas1"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -59,7 +59,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.behance.net/gallery"
+                      href="https://www.linkedin.com/in/prandeep-das/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../molecules/Logo";
 import Button from "../molecules/Button";
-import { Menu } from "../../components/atoms/Icon.jsx";
+import { Menu, Cross } from "../../components/atoms/Icon.jsx";
 import "./groups.css";
 
 const Navbar = () => {
@@ -55,7 +55,7 @@ const Navbar = () => {
               <a href="#sectionWork">Work</a>
             </li>
             {/* <li className="heading__S">
-              <a href="#sectionWork">Case Study</a>
+              <Link to="/casestudy">Case Study</Link>
             </li> */}
             {/* <li className="heading__S">
               <Link to="/portfolio">portfolio</Link>
@@ -68,12 +68,9 @@ const Navbar = () => {
             onClick={handleMenu}
             ref={hamburgerRef}
             btnType="primary"
-            btnIconRight={<Menu />}
+            btnIconRight={showMenue ? <Cross /> : <Menu />}
             altClassName="showMenuBtn"
           />
-          {/* <div className="hamburger" onClick={handleMenu} ref={hamburgerRef}>
-            &#9776;
-          </div> */}
           <article
             className={showMenue ? `menu__dropdown  show` : `menu__dropdown`}
             ref={menuRef}

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 import PropTypes from "prop-types";
 import "./molecules.css";
 
@@ -29,7 +30,9 @@ const Button = React.forwardRef((props, ref) => {
 
   return (
     <>
-      <button
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
         ref={ref}
         onClick={onClick}
         title="redirect to case studies"
@@ -38,7 +41,7 @@ const Button = React.forwardRef((props, ref) => {
       >
         {btnText}
         {btnIconRight ? btnIconRight : null}
-      </button>
+      </motion.button>
     </>
   );
 });
@@ -51,3 +54,15 @@ Button.prototype = {
 };
 
 export default Button;
+
+/*
+SAMPLE BUTTON>>>>>
+
+<Button
+  onClick={handleMenu}
+  ref={hamburgerRef}
+  btnType="primary"
+  btnIconRight={<Menu />}
+  altClassName="showMenuBtn"
+/>
+*/

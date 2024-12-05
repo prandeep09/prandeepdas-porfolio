@@ -1,16 +1,30 @@
+import { motion, AnimatePresence } from "motion/react";
+
+import { useState } from "react";
+
 import Button from "../molecules/Button.jsx";
 import Tag from "../atoms/Tag.jsx";
+import Modal from "../../components/groups/Modal.jsx";
 import cricket_thumbnail from "../../assets/cricket_thumbnail.svg";
 import insta_thumbnail from "../../assets/insta_thumbnail.svg";
 import more_cases_card_bg from "../../assets/more_cases_card_bg_2.svg";
-import CricketWirelessPdfFile from "../../assets/Case_study-CSS.pdf";
-import InstaFinancialsPdfFile from "../../assets/Case_study_IF.pdf";
+import casestudyImages from "../../metadata/casestudyimages.json";
 
 const Workcards = () => {
-  const handleOpenPdf = (fileName) => {
-    window.open(fileName, "_blank");
+  const [isCS1ModalOpen, setIsCS1ModalOpen] = useState(false);
+  const [isCS2ModalOpen, setIsCS2ModalOpen] = useState(false);
+
+  const toggleModal = (id) => {
+    if (id === "cs1") {
+      setIsCS1ModalOpen(!isCS1ModalOpen);
+    } else {
+      setIsCS2ModalOpen(!isCS2ModalOpen);
+    }
   };
 
+  // const handleOpenPdf = (fileName) => {
+  //   window.open(fileName, "_blank");
+  // };
   return (
     <>
       <article className="workcard__wrapper">
@@ -39,10 +53,16 @@ const Workcards = () => {
               </li>
               <li>
                 Looking for inspiration in places which may not......{" "}
-                <Button
+                {/* <Button
                   onClick={() => handleOpenPdf(CricketWirelessPdfFile)}
                   btnType="link"
                   btnText="See complete  case study"
+                /> */}
+                <Button
+                  onClick={() => toggleModal("cs1")}
+                  btnType="link"
+                  btnText="See complete  case study"
+                  type="button"
                 />
               </li>
             </ul>
@@ -80,10 +100,23 @@ const Workcards = () => {
               <li>
                 Learning from the best designs available online is valuable when
                 you have less experience. However, blindly following...
-                <Button
+                {/* <Button
                   onClick={() => handleOpenPdf(InstaFinancialsPdfFile)}
                   btnType="link"
                   btnText="See complete  case study"
+                /> */}
+                {/* <a
+                  href="https://www.behance.net/gallery/213900223/Fintech-Website-redesign-UXUI-Case-study?"
+                  target="blank"
+                  className="button-gen button-link"
+                >
+                  See complete case study
+                </a> */}
+                <Button
+                  onClick={() => toggleModal("cs2")}
+                  btnType="link"
+                  btnText="See complete  case study"
+                  type="button"
                 />
               </li>
             </ul>
@@ -97,6 +130,38 @@ const Workcards = () => {
           </div> */}
         </article>
       </article>
+      <AnimatePresence>
+        {isCS1ModalOpen && (
+          <Modal isOpen={isCS1ModalOpen} onClose={() => toggleModal("cs1")}>
+            <picture className="casestudy-onewrapper">
+              {casestudyImages[0]?.imagedata?.map((casestudyImage) => (
+                <img
+                  key={casestudyImage.id}
+                  src={casestudyImage.src}
+                  alt={casestudyImage.alt}
+                  loading="lazy"
+                />
+              ))}
+            </picture>
+          </Modal>
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {isCS2ModalOpen && (
+          <Modal isOpen={isCS2ModalOpen} onClose={() => toggleModal("cs2")}>
+            <picture className="casestudy-onewrapper">
+              {casestudyImages[1]?.imagedata?.map((casestudyImage) => (
+                <img
+                  key={casestudyImage.id}
+                  src={casestudyImage.src}
+                  alt={casestudyImage.alt}
+                  loading="lazy"
+                />
+              ))}
+            </picture>
+          </Modal>
+        )}
+      </AnimatePresence>
       <article className="workcard--img">
         <img src={more_cases_card_bg} alt="" />
       </article>

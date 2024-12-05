@@ -160,9 +160,37 @@ const Menu = ({ color = "#f7f7f7" }) => {
     </>
   );
 };
+const Cross = ({ color = "#f7f7f7" }) => {
+  return (
+    <>
+      <svg
+        width="25"
+        height="24"
+        viewBox="0 0 25 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.344 6L6.34402 18"
+          stroke={color}
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M6.34402 6L18.344 18"
+          stroke={color}
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </>
+  );
+};
 
 CheveronRight.prototype = {
   color: PropTypes.string,
 };
 
-export { CheveronRight, CheveronLeft, Copy, Email, Smartphone, Menu };
+export { CheveronRight, CheveronLeft, Copy, Email, Smartphone, Menu, Cross };

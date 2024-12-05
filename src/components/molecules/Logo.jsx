@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PorfolioLogoPrimary from "../../assets/logoPrimary.svg";
+import PorfolioLogoPrimary from "../../assets/Prandeep__Logo-Green.svg";
 
 const Logo = () => {
   return (
