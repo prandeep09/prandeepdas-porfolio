@@ -237,14 +237,14 @@
   gap: 10.4rem;
 }
 
-.Highlights__Company--Container,
+/* .Highlights__Company--Container,
 .Highlights__Company--Container,
 .Highlights__Company--logoBox {
   animation: slidedown linear;
   animation-delay: 2s;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-}
+} */
 
 /* Modal */
 /* src/components/Modal.css */

@@ -24,7 +24,6 @@ const About = (props) => {
         </div>
         <section className="about__intro section">
           <article className="section-wrapper">
-            {/* TODO: uncomment and make it responsive */}
             <Navbar />
             {/* <div className="about__intro-image">
               <img
@@ -48,9 +47,9 @@ const About = (props) => {
                   UI UX Designer, Developer, Illustrator
                 </h4>
                 <p className="mg-b-12">
-                  I am a UI/UX designer/developer with 6+ years of development
-                  experience, 9+ years of overall experience and a life long
-                  experience in design.
+                  I am a Bengaluru based UI/UX designer/developer with 7+ years
+                  of development experience, 9+ years of overall experience and
+                  a life long experience in design.
                 </p>
                 <p className="mg-b-12">
                   My diverse experience helps me to understand problems better
