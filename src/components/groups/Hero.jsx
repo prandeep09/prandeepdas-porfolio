@@ -72,7 +72,7 @@ const Hero = () => {
               animate="show"
               className="heading__M clr-grey-dark"
             >
-              Prandeep Das, I'm a <span></span>
+              I'm Prandeep Das, a<span></span>
             </motion.h4>
             <motion.h1
               variants={fadeUPVariants}
