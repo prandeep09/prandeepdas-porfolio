@@ -30,7 +30,7 @@ const Footer = () => {
               </div>
               <div className="Footer__Content--Social">
                 <ul>
-                  <li>
+                  <li style={{ display: "none" }}>
                     <a
                       href="https://www.instagram.com/empathytodesign/"
                       target="_blank"
