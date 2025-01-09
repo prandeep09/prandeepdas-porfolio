@@ -36,12 +36,12 @@ const Footer = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src={Instagram_logo} alt="insagram account link" />
+                      <img src={Instagram_logo} alt="instagram account link" />
                     </a>
                   </li>
                   <li>
                     <a
-                      href="https://www.behance.net/gallery"
+                      href="https://dribbble.com/Prandeep_Das000"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
