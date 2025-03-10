@@ -89,7 +89,7 @@ const Hero = () => {
               className="paragraph__hero"
             >
               Meet the Product Alchemist who balances Design, Development <br />{" "}
-              and Business.
+              & Business.
             </motion.p>
           </div>
           <motion.div
