@@ -1,0 +1,40 @@
+.slider-container {
+  width: 100%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Positioning and styling custom arrows */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px; /* Arrow size */
+  color: red; /* Change arrow color */
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Left arrow (prev) */
+.custom-prev {
+  left: 10px;
+}
+
+/* Right arrow (next) */
+.custom-next {
+  right: 10px;
+}
+
+/* Hover effect */
+.custom-arrow:hover {
+  color: darkred; /* Darker color on hover */
+  transform: translateY(-50%) scale(1.2);
+}

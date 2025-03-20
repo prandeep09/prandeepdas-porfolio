@@ -1,15 +1,18 @@
 import { Link } from "react-router-dom";
-import PorfolioLogoPrimary from "../../assets/Prandeep__Logo-Green.svg";
+import PorfolioLogoPrimary from "../../assets/Prandeep__Logo-red.svg";
 
 const Logo = () => {
   return (
     <>
       <Link to="/">
-        <img
-          src={PorfolioLogoPrimary}
-          className="logo"
-          alt="Prandeep Das logo"
-        />
+        <span className="logo__container">
+          <img
+            src={PorfolioLogoPrimary}
+            className="logo"
+            alt="Prandeep Das logo"
+          />
+          <h3 className="heading__M">I'm Prandeep</h3>
+        </span>
       </Link>
     </>
   );

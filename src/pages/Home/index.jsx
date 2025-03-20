@@ -1,5 +1,6 @@
 import Hero from "../../components/groups/Hero";
-import Footer from "../../components/groups/Footer";
+import SelectedWorks from "../../components/groups/SelectedWorks";
+import Myprofile from "../../components/groups/Myprofile";
 import Heilights from "../../components/groups/Heilights";
 import Works from "../../components/groups/Works";
 
@@ -10,9 +11,11 @@ const Home = () => {
       <div>
         {/* HERO SECTION */}
         <Hero />
-        <Heilights />
-        <Works />
-        <Footer />
+        {/* <Heilights /> */}
+        <SelectedWorks />
+        <div className="Section-Devider"></div>
+        {/* <Works /> */}
+        <Myprofile />
       </div>
     </>
   );

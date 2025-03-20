@@ -1,7 +1,7 @@
 #root {
   margin: 0 auto;
   background-color: #fffaf4;
-  background-color: var(--warm-white);
+  background-color: var(--white);
 }
 
 @keyframes logo-spin {
@@ -26,9 +26,9 @@
 /* Headings */
 .heading__hero {
   font-size: var(--fontSize-hero-heading);
-  font-weight: var(--fontWight-regular);
+  font-weight: var(--fontWight-bold);
   line-height: var(--lineHeight-hero-heading);
-  color: var(--green-darker);
+  color: var(--grey-darkest);
 }
 .heading__XL {
   font-size: var(--fontSize-heading-XL);
@@ -58,6 +58,14 @@
 }
 
 /* Paragraphs */
+.label__S,
+.label__M,
+.label__L,
+.paragraph__section,
+.paragraph__hero,
+.paragraph__small {
+  color: var(--grey-darkest);
+}
 .paragraph__small {
   font-size: var(--fontSize-paragraph-S);
   font-weight: var(--fontWight-regular);
@@ -65,17 +73,30 @@
 }
 .paragraph__hero,
 .paragraph__section {
-  font-size: var(--fontSize-paragraph-hero);
   font-weight: var(--fontWight-regular);
   line-height: var(--lineHeight-paragraph-hero);
 }
 .paragraph__hero {
-  color: var(--grey-dark);
+  font-size: var(--fontSize-paragraph-hero);
 }
 .paragraph__section {
-  width: 74rem;
-  margin: 0 auto;
-  color: var(--green-dark);
+  font-size: var(--fontSize-paragraph-regular);
+  max-width: 68rem;
+}
+
+.label__S,
+.label__S--b {
+  font-size: var(--fontSize-label-S);
+  line-height: var(--lineHeight-label-S);
+}
+
+.label__M {
+  font-size: var(--fontSize-label-M);
+  line-height: calc(var(--fontSize-label-M) * 1.2);
+}
+.label__L {
+  font-size: var(--fontSize-label-L);
+  line-height: calc(var(--fontSize-label-L) * 1.2);
 }
 
 /* Smartphones (portrait and smaller) */

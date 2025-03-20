@@ -63,9 +63,10 @@ const Workcards = () => {
                 <Button
                   onClick={() => toggleModal("cs1")}
                   btnType="link"
-                  btnText="See complete  case study"
                   type="button"
-                />
+                >
+                  See complete case study
+                </Button>
               </li>
             </ul>
           </div>
@@ -117,9 +118,10 @@ const Workcards = () => {
                 <Button
                   onClick={() => toggleModal("cs2")}
                   btnType="link"
-                  btnText="See complete  case study"
                   type="button"
-                />
+                >
+                  See complete case study
+                </Button>
               </li>
             </ul>
           </div>

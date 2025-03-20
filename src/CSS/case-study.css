@@ -1,0 +1,9 @@
+.casestudy-wrapper {
+  max-width: 88rem;
+  margin: var(--margin-center);
+}
+
+.casestudy-wrapper section:not(:nth-of-type(1)) {
+  max-width: 68rem;
+  margin: 4rem auto 4rem auto;
+}

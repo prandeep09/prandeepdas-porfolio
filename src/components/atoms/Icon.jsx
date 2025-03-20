@@ -46,25 +46,20 @@ const Copy = ({ color = "#f7f7f7" }) => {
     <>
       <svg
         width="24"
-        height="25"
-        viewBox="0 0 24 25"
+        height="24"
+        viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M20 9.5H11C9.89543 9.5 9 10.3954 9 11.5V20.5C9 21.6046 9.89543 22.5 11 22.5H20C21.1046 22.5 22 21.6046 22 20.5V11.5C22 10.3954 21.1046 9.5 20 9.5Z"
-          stroke={color}
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z"
+          fill={color}
         />
-        <path
-          d="M5 15.5H4C3.46957 15.5 2.96086 15.2893 2.58579 14.9142C2.21071 14.5391 2 14.0304 2 13.5V4.5C2 3.96957 2.21071 3.46086 2.58579 3.08579C2.96086 2.71071 3.46957 2.5 4 2.5H13C13.5304 2.5 14.0391 2.71071 14.4142 3.08579C14.7893 3.46086 15 3.96957 15 4.5V5.5"
-          stroke={color}
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
+        <defs>
+          <clipPath id="clip0_1699_3027">
+            <rect width="24" height="24" fill={color} />
+          </clipPath>
+        </defs>
       </svg>
     </>
   );

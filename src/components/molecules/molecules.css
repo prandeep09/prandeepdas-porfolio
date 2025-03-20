@@ -1,65 +1,19 @@
-/* Button */
-.button-gen {
-  border-radius: var(--sc-12);
-  border: 1px solid transparent;
-  padding: 0.8rem 1.2rem;
-  font-size: var(--fontSize-paragraph-regular);
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  transition: border-color 0.25s;
+@import url("../../CSS/button.css");
+
+.logo__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: fit-content;
-  transition: background 0.3s, color 0.1s;
-  transition-timing-function: ease-in-out;
-}
-.button-primary {
-  background: var(--green);
-  outline-color: var(--green);
-  background-color: var(--green);
-  color: var(--white);
-}
-.button-outline {
-  border: 0.15rem solid var(--green);
-  color: var(--green);
-  outline-color: var(--green);
-  background: transparent;
-}
-.button-link {
-  background: transparent;
-  color: var(--green);
-  padding: 1.6rem 0;
-  text-decoration: underline;
+  gap: 0.8rem;
 }
 
-.button-primary:hover {
-  color: var(--white);
-}
-.button-primary:hover,
-.button-outline:hover {
-  background: var(--green-dark);
-}
-.button-outline:hover {
-  background: var(--green-lightest);
-}
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-.nav__wrapper .showMenuBtn {
-  display: none;
-}
 /* sectionHead */
 
 .sectionHead {
-  margin-bottom: 8.8rem;
-  text-align: center;
-  animation: slidedown linear;
+  margin-bottom: 2.4rem;
+  text-align: left;
+  /* animation: slidedup linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 40%; */
 }
 
 /* Cards */
@@ -184,12 +138,12 @@
   box-shadow: 0 var(--sc-8) var(--sc-24) hsla(119, 84%, 15%, 0.1);
 }
 
-.workcard__crick,
+/* .workcard__crick,
 .workcard__insta {
   animation: slidedown linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-}
+} */
 
 .workcard__footer {
   display: flex;

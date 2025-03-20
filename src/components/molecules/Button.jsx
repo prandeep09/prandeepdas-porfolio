@@ -26,7 +26,15 @@ import "./molecules.css";
 //   );
 // };
 const Button = React.forwardRef((props, ref) => {
-  const { onClick, btnType, btnText, btnIconRight, altClassName, type } = props;
+  const {
+    children,
+    onClick = "",
+    btnType = "",
+    btnText = "",
+    btnIconRight = "",
+    altClassName = "",
+    type = "",
+  } = props;
 
   return (
     <>
@@ -40,6 +48,7 @@ const Button = React.forwardRef((props, ref) => {
         type={type}
       >
         {btnText}
+        {children}
         {btnIconRight ? btnIconRight : null}
       </motion.button>
     </>

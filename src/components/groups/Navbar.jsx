@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Children } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../molecules/Logo";
 import Button from "../molecules/Button";
@@ -48,22 +48,25 @@ const Navbar = () => {
 
           {/* LINKS */}
           <ul className="nav__links">
-            <li className="heading__S">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
               <Link to="/about">About</Link>
             </li>
-            <li className="heading__S">
-              <a href="#sectionWork">Work</a>
+            <li>
+              <a href="/work">Works</a>
             </li>
-            {/* <li className="heading__S">
-              <Link to="/casestudy">Case Study</Link>
+            {/* <li>
+              <Link to="/about">The lab</Link>
             </li> */}
-            {/* <li className="heading__S">
-              <Link to="/portfolio">portfolio</Link>
+            {/* <li>
+              <Link to="/resume">Resume</Link>
             </li> */}
-            <li className="heading__S">
-              <a href="#footerSection">Contact</a>
-            </li>
           </ul>
+          <a href="#footerSection" className="button-gen button-outline">
+            Contact me
+          </a>
           <Button
             onClick={handleMenu}
             ref={hamburgerRef}
@@ -76,6 +79,11 @@ const Navbar = () => {
             ref={menuRef}
           >
             <ul>
+              <li className="heading__S">
+                <Link onClick={handleMenuItemClick} to="/">
+                  Home
+                </Link>
+              </li>
               <li className="heading__S">
                 <Link onClick={handleMenuItemClick} to="/about">
                   About

@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--white);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,20 +20,19 @@ html {
 }
 
 a {
-  font-weight: 700;
-  color: var(--green-darker);
+  /* font-weight: 700; */
   text-decoration: inherit;
 }
-a:hover {
+/* a:hover {
   color: var(--orange-darker);
-}
+} */
 
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--fontFamily-secondary);
-  font-size: var(--fontSize-paragraph-regular);
-  color: var(--grey-darker);
+  font-family: var(--fontFamily-primary);
+  font-size: inherit;
+  color: var(--grey-darkest);
 }
 
 h1,
@@ -105,7 +104,7 @@ button:focus-visible {
 @media (max-width: 767px) {
   /* Styles for smartphones */
   html {
-    font-size: 100%;
+    font-size: 62.5%;
   }
 }
 

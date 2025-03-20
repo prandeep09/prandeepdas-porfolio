@@ -25,4 +25,8 @@ picture.casestudy-onewrapper {
   picture.casestudy-onewrapper {
     border-radius: var(--corner-md);
   }
+  .casestudy-wrapper {
+    max-width: 100vw;
+    width: 90%;
+  }
 }
