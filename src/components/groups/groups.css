@@ -334,8 +334,8 @@
   }
   /* Hero */
   .Blur__Circle--Container {
-    top: 15%;
-    left: 0%;
+    top: 5%;
+    left: 10%;
     width: fit-content;
   }
   .hero__wrapper {

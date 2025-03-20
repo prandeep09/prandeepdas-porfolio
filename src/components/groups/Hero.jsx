@@ -64,7 +64,7 @@ const Hero = () => {
             I am UI UX designer who understands opportunities and transform them
             into seamless experiences
           </p>
-          <Button btnType="outline">
+          <Button btnType="outline" altClassName="zi-1">
             <a href="#sectionWork">See case studies</a>
           </Button>
           <div className="Hero__Company">
