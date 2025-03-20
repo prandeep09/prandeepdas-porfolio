@@ -6,7 +6,7 @@ import ChangeSubscribeStatus from "./pages/Casestudies/ChangeSubscribeStatus.jsx
 import InstaFinancialsRedesign from "./pages/Casestudies/InstaFinancialsRedesign.jsx";
 import ScrollToTop from "./components/Helper/ScrollToTop.js";
 import Footer from "./components/groups/Footer.jsx";
-import Works from "./pages/Work/Work.jsx";
+import Work from "./pages/Work/Work.jsx";
 
 import "./variable.css";
 import "./utilities.css";
@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/Casestudy" element={<Casestudy />} />
-          <Route path="/work" element={<Works />} />
+          <Route path="/work" element={<Work />} />
           <Route path="/casestudy01" element={<ChangeSubscribeStatus />} />
           <Route path="/casestudy02" element={<InstaFinancialsRedesign />} />
         </Routes>
