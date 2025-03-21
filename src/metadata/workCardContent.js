@@ -16,8 +16,8 @@ const workCardContent = [
     companyname: "Cricket Wireless",
     year: "2023",
     avatar: cricketWAvatar,
-    image1: changeSubNui,
-    image2: changeSubOui,
+    image1: changeSubOui,
+    image2: changeSubNui,
     background: "gradient-green",
   },
   {
