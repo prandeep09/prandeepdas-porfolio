@@ -41,14 +41,16 @@ const Card = ({
             <img src={image2} alt="change subscriber status new UI" />
           </div>
           <div className="card__body">
-            <div className="mg-b-32">
+            <div className="mg-b-16">
+              <Avatar image={avatar} title={companyname} description={year} />
+            </div>
+            <div>
               <h3 className="heading__M mg-b-8">{casetitile}</h3>
               <p className="paragraph__section">
                 {casedescription}{" "}
                 <p className="txt-decor clr-red">{caselinktext}</p>{" "}
               </p>
             </div>
-            <Avatar image={avatar} title={companyname} description={year} />
           </div>
         </motion.div>
       </Link>
